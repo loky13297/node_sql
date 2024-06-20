@@ -1,6 +1,5 @@
-// Sequelize model 'user.js'
 const { DataTypes } = require('sequelize');
-const sequelize = require('../config'); // Adjust path to your sequelize instance
+const sequelize = require('../config'); 
 
 const users = sequelize.define('users', {
   userId: {
@@ -39,8 +38,7 @@ const users = sequelize.define('users', {
     defaultValue: false,
   },
 }, {
-  // Other model options
-  timestamps: true, // Automatically adds createdAt and updatedAt fields
+  timestamps: true,
 });
 
 module.exports = users;
